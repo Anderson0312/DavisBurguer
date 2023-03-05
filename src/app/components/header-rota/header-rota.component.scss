@@ -1,0 +1,25 @@
+ion-toolbar{
+    border-top: 0.2px solid #777777;
+    border-bottom: 0.2px solid #777777;
+    ion-back-button {
+        --color: #733119;
+    }
+
+    .titleroute{
+        width: 100px;
+        text-align: center;
+
+        .title-custom{
+            color: #BF0404;
+            font-weight:bold;
+            font-size: 15px;
+            margin-left: -30px;
+        }
+        .line{
+
+            width: 70px;
+            height: 2px;
+            background: #F29F05;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 
   
-<ion-menu contentId="main-content" id='menu'>
+<ion-menu contentId="main-content" class='menu'>
   <ion-header>
     <ion-toolbar>
       <ion-title slot="start" id="name">DAVI'S BURGUER</ion-title>
@@ -9,23 +9,28 @@
   <ion-content>
     <ion-list>
       <ion-item>
+        <ion-icon name="book-outline" slot="start" ></ion-icon>
         <ion-label routerLink="/cardapio" >Cardapio</ion-label>
         <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
       </ion-item>
       <ion-item>
-        <ion-label routerLink="/sadastro" >Cadastro</ion-label>
+        <ion-icon name="person-add-outline" slot="start"></ion-icon>
+        <ion-label routerLink="/cadastro" >Cadastro</ion-label>
         <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
       </ion-item>
       <ion-item>
+        <ion-icon name="ticket-outline" slot="start"></ion-icon>
         <ion-label routerLink="/cupoens" >Cupõens</ion-label>
         <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
       </ion-item>
       <ion-item>
-        <ion-label routerLink="/sobre-nos" >sobre</ion-label>
+        <ion-icon name="storefront-outline" slot="start"></ion-icon>
+        <ion-label routerLink="/sobre-nos" >Sobre</ion-label>
         <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
       </ion-item>
       <ion-item>
-        <ion-label>login</ion-label>
+        <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+        <ion-label routerLink="/login">Login</ion-label>
         <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
       </ion-item>
     </ion-list>

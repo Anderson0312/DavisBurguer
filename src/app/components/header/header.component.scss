@@ -1,9 +1,4 @@
 ion-header{
-    ion-icon{
-        font-size: 30px;
-        position: relative;
-        margin-right: 10px;
-    }
 
     #logo{
         width: 90px;
@@ -38,3 +33,14 @@ ion-header{
         --font-weight: bold;
     }
   }
+
+.menu{
+    ion-icon{
+        font-size: 24px;
+        color: #BF0404;
+    }
+
+    ion-label{
+        color: #F29F05;
+    }
+}

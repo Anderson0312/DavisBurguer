@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-header-rota',
@@ -7,8 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderRotaComponent  implements OnInit {
 
-  constructor() { }
+
+  constructor(public router:ActivatedRoute) { 
+    this.router.paramMap.subscribe((params:ParamMap)=>{
+      const locailrout = (params.get('id'))
+    })
+  }
 
   ngOnInit() {}
+
+  locailRoute($event: any) {
+    console.log($event.detail.value);
+
+  }
 
 }
